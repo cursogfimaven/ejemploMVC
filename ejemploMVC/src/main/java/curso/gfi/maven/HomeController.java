@@ -35,7 +35,46 @@ public class HomeController {
 		
 		return "home";
 	}
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+
+	@RequestMapping(value = "/aitor", method = RequestMethod.GET)
+	public String aitor(Locale locale, Model model) {
+
+		logger.info("Welcome home Eduardo! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "aitor";
+	}
 	
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/profe", method = RequestMethod.GET)
+	public String profe(Locale locale, Model model) {
+
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+
+		return "profe";
+	}
+	
+
+	
+
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -53,4 +92,5 @@ public class HomeController {
 		return "inaki";
 	}
 	
+
 }
