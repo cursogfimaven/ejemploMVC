@@ -36,6 +36,7 @@ public class HomeController {
 		return "home";
 	}
 
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -43,7 +44,7 @@ public class HomeController {
 	public String martin(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
-		Date date = new Date();
+		Date date = new Date(); 
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
 		String formattedDate = dateFormat.format(date);
