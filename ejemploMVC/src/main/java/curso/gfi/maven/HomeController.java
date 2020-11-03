@@ -37,7 +37,7 @@ public class HomeController {
 	}
 	
 	 /**
-	 * Ejercicio:  :)
+	 * Ejercicio: 
 	 */
 	@RequestMapping(value = "/alfonso", method = RequestMethod.GET)
 	public String alfonso(Locale locale, Model model) {
