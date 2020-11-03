@@ -20,7 +20,7 @@ public class ProfeTest {
 	
 	@Test
 	public void profe() {
-		assertEquals(getController().profe(), "profe");
+		assertEquals(getController().profe(), "profe1");
 	}
 
 	public HomeController getController() {
