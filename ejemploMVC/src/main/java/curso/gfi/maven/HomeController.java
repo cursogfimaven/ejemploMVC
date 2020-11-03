@@ -34,13 +34,48 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "home";
+		
 	}
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
+	@RequestMapping(value = "/rcarlos", method = RequestMethod.GET)
+	public String rcarlos(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "rcarlos";
+	}
+	
+	
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
 
-	@RequestMapping(value = "/aitor", method = RequestMethod.GET)
-	public String aitor(Locale locale, Model model) {
+	@RequestMapping(value = "/eduardo", method = RequestMethod.GET)
+	public String eduardo(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("Welcome home Eduardo! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "eduardo";
+	}
+	
+    
+    @RequestMapping(value = "/aitor", method = RequestMethod.GET)
+    public String aitor(Locale locale, Model model) {
 
 		logger.info("Welcome home Eduardo! The client locale is {}.", locale);
 		
@@ -55,11 +90,9 @@ public class HomeController {
 	}
 	
 	/**
-<<<<<<< HEAD
+
 	 * Simply selects the home view to render by returning its name. MODIFICADO
 	 */ 
-=======
-	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/profe", method = RequestMethod.GET)
 	public String profe(Locale locale, Model model) {
@@ -77,14 +110,16 @@ public class HomeController {
 	}
 	
 
-	
-
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
->>>>>>> branch 'feature-inaki' of https://github.com/cursogfimaven/ejemploMVC.git
+
+
 	@RequestMapping(value = "/inaki", method = RequestMethod.GET)
 	public String inaki(Locale locale, Model model) {
+
+
+
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
@@ -96,6 +131,24 @@ public class HomeController {
 		
 		return "inaki";
 	}
-	
+  
+  
+	@RequestMapping(value = "/ronald", method = RequestMethod.GET)
+	public String ronald(Locale locale, Model model) {
+    
+    logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+    return "ronald";
+  }
+  
+  
 
 }
+	
