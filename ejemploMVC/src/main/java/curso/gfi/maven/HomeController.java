@@ -37,8 +37,8 @@ public class HomeController {
 	}
 	
 	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
+	 * Simply selects the home view to render by returning its name. MODIFICADO
+	 */ 
 	@RequestMapping(value = "/inaki", method = RequestMethod.GET)
 	public String inaki(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
