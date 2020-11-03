@@ -93,7 +93,7 @@ public class HomeController {
 
 	 * Simply selects the home view to render by returning its name. MODIFICADO
 	 */ 
-	 */
+	 
 	@RequestMapping(value = "/profe", method = RequestMethod.GET)
 	public String profe(Locale locale, Model model) {
 
