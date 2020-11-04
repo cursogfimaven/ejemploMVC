@@ -34,13 +34,87 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "home";
+
 	}
+
+
+
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/sergio", method = RequestMethod.GET)
 	public String sergio(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date(); 
+    DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+ 		return "sergio";
+
+		
+	}
+    
+    
+    
+    
+	@RequestMapping(value = "/martin", method = RequestMethod.GET)
+	public String martin(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date(); 
+    DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+ 		return "martin";
+
+		
+	}
+	
+		/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/carlos", method = RequestMethod.GET)
+	public String carlos(Locale locale, Model model) {
+    Logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "carlos";
+	}
+	
+	
+
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/oscar", method = RequestMethod.GET)
+	public String oscar(Locale locale, Model model) {
+
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+
+ 
+ 		return "oscar";
+	}
+    
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/rcarlos", method = RequestMethod.GET)
+	public String rcarlos(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
@@ -50,7 +124,75 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "sergio";
+		return "rcarlos";
 	}
 	
+	
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+
+	@RequestMapping(value = "/eduardo", method = RequestMethod.GET)
+	public String eduardo(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("Welcome home Eduardo! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "eduardo";
+	}
+	
+    
+    @RequestMapping(value = "/aitor", method = RequestMethod.GET)
+    public String aitor(Locale locale, Model model) {
+
+		logger.info("Welcome home Eduardo! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "aitor";
+	}
+	
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/profe", method = RequestMethod.GET)
+	public String profe(Locale locale, Model model) {
+
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+
+		return "profe";
+	}
+	
+
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/ronald", method = RequestMethod.GET)
+	public String ronald(Locale locale, Model model) {
+
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+
+		return "ronald";
+	}
+
 }
