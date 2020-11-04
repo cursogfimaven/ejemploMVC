@@ -129,7 +129,7 @@
 					<username>tomcat</username>
 					<password>tomcat</password>
 					<server>TomcatServer</server>
-					<path>/profe</path>
+					<path>/inaki</path>
 				</configuration>
 			</plugin>
             <plugin>
