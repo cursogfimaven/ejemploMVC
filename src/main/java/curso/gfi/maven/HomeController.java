@@ -36,10 +36,6 @@ public class HomeController {
 		return "home";
 		
 	}
-	
-	
-	
-
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -57,6 +53,7 @@ public class HomeController {
  		return "oscar";
 	}
     
+
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -74,7 +71,7 @@ public class HomeController {
 		return "rcarlos";
 	}
 	
-	
+
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -146,6 +143,5 @@ public class HomeController {
 		
 		return "ronald";
 	}
-
 }
 	
