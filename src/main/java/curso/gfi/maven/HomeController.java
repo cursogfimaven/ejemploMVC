@@ -77,7 +77,8 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/carlos", method = RequestMethod.GET)
 	public String carlos(Locale locale, Model model) {
-    Logger.info("Welcome home! The client locale is {}.", locale);
+    
+		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -96,8 +97,8 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/oscar", method = RequestMethod.GET)
 	public String oscar(Locale locale, Model model) {
-
-		logger.info("Welcome home! The client locale is {}.", locale);
+logger.info("Welcome home! The client locale is {}.", locale);
+		
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
