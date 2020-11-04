@@ -1,3 +1,0 @@
-[1103/171707.072:ERROR:crash_report_database_win.cc(587)] GetFileAttributes C:\Users\Administrador\AppData\Local\Google\Chrome\User Data\Crashpad\reports: Acceso denegado. (0x5)
-[1103/171707.090:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: Ha terminado la canalización. (0x6D)
-[1103/171707.092:ERROR:crash_report_database_win.cc(587)] GetFileAttributes C:\Users\Administrador\AppData\Local\Google\Chrome\User Data\Crashpad\reports: Acceso denegado. (0x5)
