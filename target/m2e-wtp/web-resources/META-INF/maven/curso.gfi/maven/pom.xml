@@ -6,7 +6,7 @@
 	<artifactId>maven</artifactId>
 	<name>ejemploMVC</name>
 	<packaging>war</packaging>
-	<version>1.0-sergio</version>
+	<version>1.0</version>
 	<properties> 
 		<java-version>1.8</java-version>
 		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
@@ -124,11 +124,11 @@
 	     <artifactId>tomcat7-maven-plugin</artifactId>
 	     <version>2.2</version>
 	     <configuration>
-	     	<url>http://188.127.167.12:8080/manager/text</url>
+	     	<url>http://localhost:8080/manager/text</url>
 	    	<username>tomcat</username>
 	        <password>tomcat</password>
 		<server>TomcatServer</server>
-		<path>/alfonso</path>
+		<path>/</path>
 	     </configuration>
 	    </plugin>		
             <plugin>
