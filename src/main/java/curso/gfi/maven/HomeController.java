@@ -46,10 +46,13 @@ public class HomeController {
 	public String martin(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
-		Date date = new Date(); 
-    DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
 		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+ 
  		return "martin";
 
 		
@@ -152,11 +155,15 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/ronald", method = RequestMethod.GET)
 	public String ronald(Locale locale, Model model) {
-
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
-
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+ 
 		return "ronald";
 	}
 
