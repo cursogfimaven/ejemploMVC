@@ -128,7 +128,7 @@
 	    	<username>tomcat</username>
 	        <password>tomcat</password>
 		<server>TomcatServer</server>
-		<path>/</path>
+		<path>/deploy</path>
 	     </configuration>
 	    </plugin>		
             <plugin>
